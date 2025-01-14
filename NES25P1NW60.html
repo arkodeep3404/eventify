@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Verification Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      pre {
+        background-color: #f4f4f4;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Verify Team ID NES25P1NW60</h1>
+    <pre id="jsonDisplay"></pre>
+
+    <script>
+      // Example JSON data
+      const jsonData = {
+        Name: "NexaWings International",
+        Venue: "Uttarakhand",
+        City: ["Roorkee", "Mussoorie"],
+        Members: ["Arkodeep Chatterjee", "Aditya Kumar", "Akash Pandey"],
+      };
+
+      // Display the JSON data in the pre element
+      const jsonDisplay = document.getElementById("jsonDisplay");
+      jsonDisplay.textContent = JSON.stringify(jsonData, null, 2);
+    </script>
+  </body>
+</html>
